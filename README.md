@@ -1,3 +1,1 @@
-# Get Started!
-
-Add files and start typing 🎉
+# CannonWilson.github.io

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Home</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Custom JS-->
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="stars-small"></div>
+    <div id="stars-medium"></div>
+    <div id="stars-large"></div>
+
+    <div class="fullheightcenter">
+      <h1 id="name" onclick="nameClicked()" onmouseover="nameHovered()" onmouseleave="nameUnhovered()">CANNON</h1>
+    </div>
+
+
+    
+    <div class="wrapper">
+      <div class="box">
+        <h1>Hi there!</h1>
+        <p>My name is Cannon Wilson. </p>
+      </div>
+      <div class="box">
+        <div class="test">
+      </div>     
+    </div>
+    
+    
+    
+    <img id="myImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg/2880px-Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+    <div id="target"/>
+    
+      
+    </div>
+    
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  
+</script>
+
+    
+
+    <script>
+      const starsSmall = document.getElementById("stars-small");
+      const starsMedium = document.getElementById("stars-medium");
+      const starsLarge = document.getElementById("stars-large");
+
+      // Optimize these values for performance and appearance by basing # of stars on window width
+      const width = window.innerWidth;
+      loadStars(starsSmall, width / 2.5);
+      loadStars(starsMedium, width / 10);
+      loadStars(starsLarge, width / 30);
+    </script>
+  </body>
+</html>
