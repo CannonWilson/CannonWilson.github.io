@@ -15,8 +15,6 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to top, #c70e7d -140%, black);
-  margin: 0;
-  position: sticky;
 }
 
 #name {
