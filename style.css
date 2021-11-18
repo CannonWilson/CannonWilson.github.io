@@ -106,7 +106,7 @@ body {
   align-self: center;
   justify-items: center;
   justify-self: center;
-  width: 100vw;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /*Auto-fit allows resizing*/
   grid-gap: 10px;
   background-color: #fff;
@@ -116,7 +116,7 @@ body {
 .box {
   place-self: center;
   text-align: center;
-  width: 30vw;
+  width: 50%;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
