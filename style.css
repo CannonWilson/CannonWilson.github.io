@@ -233,16 +233,16 @@ div {
 .horizontal-scroll-wrapper > div {
   display: block;
   padding: 5px;
-  background: #cab;
   transform: rotate(90deg);
   transform-origin: right top;
 }
 
 .squares {
-  padding: 250px 0 0 0;
+  padding: 100vw 0 0 0;
 }
 .squares > div {
-  width: 250px;
-  height: 250px;
-  margin: 10px 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  color: white;
 }
