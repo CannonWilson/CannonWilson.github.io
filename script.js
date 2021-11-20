@@ -87,10 +87,10 @@ function handleIntersect(entries, observer) {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > prevRatio) {
       entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);
-      entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 12)}vw`;
+      entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
     } else {
       entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
-      entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 12)}vw`;
+      entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
     }
 
     prevRatio = entry.intersectionRatio;
