@@ -249,26 +249,25 @@ div {
 
 
 
-/* Scrolling */
-[data-inviewport] { /* THIS DEMO ONLY */
-  width:100px; height:100px; background:#0bf; margin: 150vh 0; 
+/*Scroll*/
+
+#firstBlock {
+  width: 50vw;
+  height: 80vh;
+  background: red;
 }
 
-/* inViewport */
-
-[data-inviewport="scale-in"] { 
-  transition: 2s;
-  transform: scale(0.1);
-}
-[data-inviewport="scale-in"].is-inViewport { 
-  transform: scale(1);
+#secondBlock {
+  width: 50vw;
+  height: 80vh;
+  background: blue;
 }
 
-[data-inviewport="fade-rotate"] { 
-  transition: 2s;
-  opacity: 0;
-}
-[data-inviewport="fade-rotate"].is-inViewport { 
-  transform: rotate(180deg);
-  opacity: 1;
+#log {
+  width: 200px;
+  height: 80vh;
+  position: fixed;
+  right: 0px;
+  top: 10px;
+  overflow: auto;
 }

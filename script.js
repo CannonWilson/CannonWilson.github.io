@@ -38,27 +38,25 @@ function nameClicked() {
 
 
 
-// SCrolling animations
 
-const inViewport = (entries, observer) => {
+//Scroll
+function callbackFunc(entries, observer)
+{
   entries.forEach(entry => {
-    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    var txt = entry.target.id + " visibility: " + entry.isIntersecting;
+    
+    document.getElementById('log').appendChild(document.createTextNode(txt));
+    document.getElementById('log').appendChild(document.createElement("br"));
   });
-};
+}
 
-const Obs = new IntersectionObserver(inViewport);
-const obsOptions = {
-  // Default is null (Browser viewport). Set a specific parent element:
-  root: document.querySelector('#someSpecificParent'),
-  // add 40px inner "margin" area at which the observer starts to calculate:
-  rootMargin: '40px', 
-  // Default is 0.0 meaning the callback is called as soon 1 pixel is inside the viewport.  
-  // Set to 1.0 to trigger a callback when 100% of the target element is inside the viewport,   
-  // or i.e: 0.5 when half of the target element is visible:
-  threshold: 0.5, 
-};
-// Attach observer to every [data-inviewport] element:
-const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-ELs_inViewport.forEach(EL => {
-  Obs.observe(EL, obsOptions);
-});
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+
+observer.observe(document.getElementById('firstBlock'));
+observer.observe(document.getElementById('secondBlock'));
