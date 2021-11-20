@@ -35,3 +35,30 @@ function nameUnhovered() {
 function nameClicked() {
   document.getElementById("target").scrollIntoView(true, {behavior: "smooth"})
 }
+
+
+
+// SCrolling animations
+
+const inViewport = (entries, observer) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+  });
+};
+
+const Obs = new IntersectionObserver(inViewport);
+const obsOptions = {
+  // Default is null (Browser viewport). Set a specific parent element:
+  root: document.querySelector('#someSpecificParent'),
+  // add 40px inner "margin" area at which the observer starts to calculate:
+  rootMargin: '40px', 
+  // Default is 0.0 meaning the callback is called as soon 1 pixel is inside the viewport.  
+  // Set to 1.0 to trigger a callback when 100% of the target element is inside the viewport,   
+  // or i.e: 0.5 when half of the target element is visible:
+  threshold: 0.5, 
+};
+// Attach observer to every [data-inviewport] element:
+const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+ELs_inViewport.forEach(EL => {
+  Obs.observe(EL, obsOptions);
+});

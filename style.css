@@ -246,3 +246,29 @@ div {
   margin: 0;
   color: white;
 }
+
+
+
+/* Scrolling */
+[data-inviewport] { /* THIS DEMO ONLY */
+  width:100px; height:100px; background:#0bf; margin: 150vh 0; 
+}
+
+/* inViewport */
+
+[data-inviewport="scale-in"] { 
+  transition: 2s;
+  transform: scale(0.1);
+}
+[data-inviewport="scale-in"].is-inViewport { 
+  transform: scale(1);
+}
+
+[data-inviewport="fade-rotate"] { 
+  transition: 2s;
+  opacity: 0;
+}
+[data-inviewport="fade-rotate"].is-inViewport { 
+  transform: rotate(180deg);
+  opacity: 1;
+}
