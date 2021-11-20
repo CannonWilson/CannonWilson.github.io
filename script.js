@@ -40,23 +40,24 @@ function nameClicked() {
 
 
 //Scroll
-function callbackFunc(entries, observer)
-{
-  entries.forEach(entry => {
-    var txt = entry.target.id + " visibility: " + entry.isIntersecting;
-    
-    document.getElementById('log').appendChild(document.createTextNode(txt));
-    document.getElementById('log').appendChild(document.createElement("br"));
-  });
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.addEventListener("scroll", function(event) {
+        const animatedBoxes = document.getElementsByClassName("animated-box");
+        const windowOffsetTop = window.innerHeight + window.scrollY;
+
+        Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+            const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+            if (windowOffsetTop >= animatedBoxOffsetTop) {
+                addClass(animatedBox, "fade-in");
+            }
+        });
+    });
+});
+
+function addClass(element, className) {
+    const arrayClasses = element.className.split(" ");
+    if (arrayClasses.indexOf(className) === -1) {
+        element.className += " " + className;
+    }
 }
-
-let options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1
-  };
-
-let observer = new IntersectionObserver(callbackFunc, options);
-
-observer.observe(document.getElementById('firstBlock'));
-observer.observe(document.getElementById('secondBlock'));
