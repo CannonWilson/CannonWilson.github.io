@@ -86,10 +86,11 @@ function buildThresholdList() {
 function handleIntersect(entries, observer) {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > prevRatio) {
-      entry.target.style.color = increasingColor.replace("ratio", entry.intersectionRatio);
-      
+      entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);
+      entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 12)}vw`;
     } else {
-      entry.target.style.color = decreasingColor.replace("ratio", entry.intersectionRatio);
+      entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
+      entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 12)}vw`;
     }
 
     prevRatio = entry.intersectionRatio;
