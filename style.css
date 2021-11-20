@@ -204,20 +204,6 @@ body {
   }
 }
 
-::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
-}
-
-::-webkit-scrollbar-button {
-  width: 1px;
-  height: 1px;
-}
-
-div {
-  box-sizing: border-box;
-}
-
 .horizontal-scroll-wrapper {
   position: relative;
   display: block;
