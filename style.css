@@ -22,8 +22,7 @@ body {
   letter-spacing: 1vw;
   text-align: center;
   position: relative;
-  margin: 200px;
-  transform: translate(-50%, -100%);
+  transform: translate(-85%, 100%);
   animation: shadow 3s linear infinite;
 }
 .stars {
