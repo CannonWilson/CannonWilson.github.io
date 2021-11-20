@@ -219,19 +219,16 @@ div {
 }
 
 .horizontal-scroll-wrapper {
-  position: absolute;
+  position: relative;
   display: block;
   top: 0;
   left: 0;
-  width: calc(250px + 1px);
-  max-height: 750px;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  padding-top: 1px;
-  background: #abc;
   overflow-y: auto;
   overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-250px);
-  transform-origin: right top;
+  transform: rotate(-90deg);
 }
 .horizontal-scroll-wrapper > div {
   display: block;
