@@ -5,6 +5,17 @@ body {
 }
 
 
+.wrapper {
+ position: fixed;
+ left: 0;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ color: gray;
+ overflow: auto;
+}
+
+
 
 /* Styling for the big CANNON */
 #name {
