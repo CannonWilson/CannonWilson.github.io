@@ -66,6 +66,7 @@ function handleIntersect(entries, observer) {
     const currentY = entry.boundingClientRect.y
     const currentRatio = entry.intersectionRatio
     const isIntersecting = entry.isIntersecting
+    const translateY = entry.target.style.top //YYEEEEEt
     
      // Scrolling down/up
     if (currentY < previousY) {
