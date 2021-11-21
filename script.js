@@ -61,18 +61,22 @@ function buildThresholdList() {
 
 function handleIntersect(entries, observer) {
   entries.forEach((entry) => {
+    
+    entry.target.style.opacity = `${entry.intersectionRatio}`;
+      entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+      
     if (entry.intersectionRatio > prevRatio) {
       //entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);
       //entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
-      entry.target.style.opacity = `${entry.intersectionRatio}`;
+      //entry.target.style.opacity = `${entry.intersectionRatio}`;
       //entry.target.style.top = `${(entry.intersectionRatio - 0.5) * 200}px`
-      entry.target.style.transform = `translate(0, ${(entry.intersectionRatio-1) * 150}px)`
+      //entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
     } else {
       //entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
       //entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
-      entry.target.style.opacity = `${entry.intersectionRatio}`;
+      //entry.target.style.opacity = `${entry.intersectionRatio}`;
       //entry.target.style.top = `${(entry.intersectionRatio - 0.5) * 200}px`
-      entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
+      //entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
     }
 
     prevRatio = entry.intersectionRatio;
