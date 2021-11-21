@@ -72,7 +72,7 @@ function createObserver() {
 
 function buildThresholdList() {
   let thresholds = [];
-  let numSteps = 20;
+  let numSteps = 2;
 
   for (let i=1.0; i<=numSteps; i++) {
     let ratio = i/numSteps;
