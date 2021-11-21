@@ -63,7 +63,7 @@ function handleIntersect(entries, observer) {
   entries.forEach((entry) => {
     
       entry.target.style.opacity = `${entry.intersectionRatio}`;      
-      if (entry.target.scrollHeight - entry.target.scrollTop === entry.target.clientHeight - 15) {
+      if (entry.target.scrollHeight - entry.target.scrollTop === entry.target.clientHeight - 1) {
               entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
       }
 
