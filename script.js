@@ -13,28 +13,28 @@ function loadStars(star, starsToLoad) {
 }
 
 
-function nameHovered() {
-  let name = document.getElementById("name")
-  name.style.animationDuration = "1s"
+// function nameHovered() {
+//   let name = document.getElementById("name")
+//   name.style.animationDuration = "1s"
   
-  document.getElementById("stars-small").style.animationPlayState = "paused"
-  document.getElementById("stars-medium").style.animationPlayState = "paused"
-  document.getElementById("stars-large").style.animationPlayState = "paused"
+//   document.getElementById("stars-small").style.animationPlayState = "paused"
+//   document.getElementById("stars-medium").style.animationPlayState = "paused"
+//   document.getElementById("stars-large").style.animationPlayState = "paused"
   
-}
+// }
 
-function nameUnhovered() {
-  let name = document.getElementById("name")
-  name.style.animationDuration = "3s"
+// function nameUnhovered() {
+//   let name = document.getElementById("name")
+//   name.style.animationDuration = "3s"
   
-  document.getElementById("stars-small").style.animationPlayState = "running"
-  document.getElementById("stars-medium").style.animationPlayState = "running"
-  document.getElementById("stars-large").style.animationPlayState = "running"
-}
+//   document.getElementById("stars-small").style.animationPlayState = "running"
+//   document.getElementById("stars-medium").style.animationPlayState = "running"
+//   document.getElementById("stars-large").style.animationPlayState = "running"
+// }
 
-function nameClicked() {
-  document.getElementById("target").scrollIntoView(true, {behavior: "smooth"})
-}
+// function nameClicked() {
+//   document.getElementById("target").scrollIntoView(true, {behavior: "smooth"})
+// }
 
 
 
@@ -89,10 +89,12 @@ function handleIntersect(entries, observer) {
       //entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);
       //entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
       entry.target.style.opacity = `${entry.intersectionRatio}`;
+      entry.target.style.top = `${entry.intersectionRatio * 100}px`
     } else {
       //entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
       //entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
       entry.target.style.opacity = `${entry.intersectionRatio}`;
+      entry.target.style.top = `${entry.intersectionRatio * 100}px`
     }
 
     prevRatio = entry.intersectionRatio;
