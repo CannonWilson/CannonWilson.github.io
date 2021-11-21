@@ -47,19 +47,19 @@ body {
 #stars-small {
   width: 1px;
   height: 1px;
-  animation: animStar 20s linear infinite;
+  animation: animStar 40s linear infinite;
 }
 
 #stars-medium {
   width: 2px;
   height: 2px;
-  animation: animStar 40s linear infinite;
+  animation: animStar 80s linear infinite;
 }
 
 #stars-large {
   width: 3px;
   height: 3px;
-  animation: animStar 60s linear infinite;
+  animation: animStar 120s linear infinite;
 }
 
 @keyframes animStar {
