@@ -55,6 +55,9 @@ body {
   }
 }
 
+
+/* Testing to play a gif on hover */
+/* Currently plays a dancing banana */
 .test {
   width: 300px;
   height: 300px;
@@ -69,7 +72,7 @@ body {
 .test:hover {
   animation-play-state: running;
 }
-
+/* Dancing animation based on backgroun-image */
 @keyframes test {
   0%   { background-image: url('http://i.imgur.com/E2ee6fI.gif'); }
 	15%  { background-image: url('http://i.imgur.com/JIi0uul.gif'); }
@@ -81,6 +84,9 @@ body {
 	100% { background-image: url('http://i.imgur.com/fx5wUNY.gif'); }
 }
 
+
+
+/* Set scrollbar to be very small, otherwise it is ugly */
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px;
@@ -92,13 +98,19 @@ body {
 }
 
 
+
+/*  */
 .horizontal-scroll-wrapper {
-  position: absolute;
+  position: relative;
   display: block;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
+  padding: 100vw 0 0 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -106,11 +118,6 @@ body {
 }
 .horizontal-scroll-wrapper > div {
   transform: rotate(90deg);
-}
-
-.squares {
-  padding: 100vw 0 0 0;
-  width: 100vw;
 }
 
 
