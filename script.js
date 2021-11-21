@@ -19,7 +19,7 @@ function loadStars(star, starsToLoad) {
 const numSteps = 20.0;
 
 // let boxElement;
-let nameElement;
+// let nameElement;
 let previousRatio = 0.0;
 let previousY = 0;
 let transformY = -50;
@@ -30,7 +30,7 @@ let scrollScale = 50;
 // Set things up
 window.addEventListener("load", (event) => {
   // boxElement = document.querySelector("#box");
-  nameElement = document.querySelector("#name");
+  // nameElement = document.querySelector("#name");
 
   createObserver();
 }, false);
@@ -46,7 +46,7 @@ function createObserver() {
 
   observer = new IntersectionObserver(handleIntersect, options);
   // observer.observe(boxElement);
-  observer.observe(nameElement);
+  // observer.observe(nameElement);
 }
 
 function buildThresholdList() {
