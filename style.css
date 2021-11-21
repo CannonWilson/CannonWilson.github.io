@@ -118,3 +118,19 @@ body {
   color: white;
   font: 32px "Arial";
 }
+
+/* Experimenting with scrolling */
+.observer__target {
+  position: relative;
+  width: 100%;
+  background: rebeccapurple;
+}
+
+.observer__state {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  color: #111;
+  font: 400 1.125em/1.5 sans-serif;
+  background: #fff;
+}

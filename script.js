@@ -89,7 +89,8 @@ function loadStars(star, starsToLoad) {
 
 
 // SCroll second aproach tried
-const name = document.querySelector('#name')
+const state = document.querySelector('.observer__state')
+const target = document.querySelector('.observer__target')
 
 const thresholdArray = steps => Array(steps + 1)
  .fill(0)
@@ -107,15 +108,15 @@ const handleIntersect = entries => {
     // Scrolling down/up
     if (currentY < previousY) {
       if (currentRatio > previousRatio && isIntersecting) { // Scrolling down enter
-        entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+        state.textContent ="Scrolling down enter"
       } else { // Scrolling down leave
-        entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+        state.textContent ="Scrolling down leave"
       }
     } else if (currentY > previousY && isIntersecting) {
       if (currentRatio < previousRatio) { // Scrolling up leave
-        entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+        state.textContent ="Scrolling up leave"
       } else { // Scrolling up enter
-        entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+        state.textContent ="Scrolling up enter"
       }
     }
 
@@ -128,4 +129,4 @@ const observer = new IntersectionObserver(handleIntersect, {
   threshold: thresholdArray(20),
 })
 
-observer.observe(name)
+observer.observe(target)
