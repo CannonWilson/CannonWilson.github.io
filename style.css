@@ -4,16 +4,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#target {
-  z-index: 2;
-  display: grid;
-}
-
-.fullheightcenter {
-  z-index: -2;
-
-}
-
 #name {
   font-weight: 400;
   font-family: 'Bungee Outline', cursive;
@@ -108,6 +98,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
