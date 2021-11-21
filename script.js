@@ -51,7 +51,7 @@ function createObserver() {
 
 function buildThresholdList() {
   let thresholds = [];
-  let numSteps = 40;
+  let numSteps = 20;
 
   for (let i=1.0; i<=numSteps; i++) {
     let ratio = i/numSteps;
@@ -92,48 +92,3 @@ function handleIntersect(entries, observer) {
     previousRatio = currentRatio
   });
 }
-
-
-
-// SCroll second aproach tried
-// const state = document.querySelector('.observer__state')
-// const target = document.querySelector('.observer__target')
-
-// const thresholdArray = steps => Array(steps + 1)
-//  .fill(0)
-//  .map((_, index) => index / steps || 0)
-
-// let previousY = 0
-// let previousRatio = 0
-
-// const handleIntersect = entries => {
-//   entries.forEach(entry => {
-//     const currentY = entry.boundingClientRect.y
-//     const currentRatio = entry.intersectionRatio
-//     const isIntersecting = entry.isIntersecting
-
-//     // Scrolling down/up
-//     if (currentY < previousY) {
-//       if (currentRatio > previousRatio && isIntersecting) { // Scrolling down enter
-//         state.textContent ="Scrolling down enter"
-//       } else { // Scrolling down leave
-//         state.textContent ="Scrolling down leave"
-//       }
-//     } else if (currentY > previousY && isIntersecting) {
-//       if (currentRatio < previousRatio) { // Scrolling up leave
-//         state.textContent ="Scrolling up leave"
-//       } else { // Scrolling up enter
-//         state.textContent ="Scrolling up enter"
-//       }
-//     }
-
-//     previousY = currentY
-//     previousRatio = currentRatio
-//   })
-// }
-
-// const observer = new IntersectionObserver(handleIntersect, {
-//   threshold: thresholdArray(20),
-// })
-
-// observer.observe(target)
