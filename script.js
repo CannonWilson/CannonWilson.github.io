@@ -13,30 +13,6 @@ function loadStars(star, starsToLoad) {
 }
 
 
-// function nameHovered() {
-//   let name = document.getElementById("name")
-//   name.style.animationDuration = "1s"
-  
-//   document.getElementById("stars-small").style.animationPlayState = "paused"
-//   document.getElementById("stars-medium").style.animationPlayState = "paused"
-//   document.getElementById("stars-large").style.animationPlayState = "paused"
-  
-// }
-
-// function nameUnhovered() {
-//   let name = document.getElementById("name")
-//   name.style.animationDuration = "3s"
-  
-//   document.getElementById("stars-small").style.animationPlayState = "running"
-//   document.getElementById("stars-medium").style.animationPlayState = "running"
-//   document.getElementById("stars-large").style.animationPlayState = "running"
-// }
-
-// function nameClicked() {
-//   document.getElementById("target").scrollIntoView(true, {behavior: "smooth"})
-// }
-
-
 
 
 //Scroll
