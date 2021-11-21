@@ -23,6 +23,7 @@ let nameElement;
 let previousRatio = 0.0;
 let previousY = 0;
 let transformY = 0;
+let scrollScale = 50;
 // let increasingColor = "rgba(40, 40, 190, ratio)";
 // let decreasingColor = "rgba(190, 40, 40, ratio)";
 
@@ -71,18 +72,18 @@ function handleIntersect(entries, observer) {
      // Scrolling down/up
     if (currentY < previousY) {
       if (currentRatio > previousRatio && isIntersecting) { // Scrolling down enter
-        transformY += -1 * entry.intersectionRatio * 150
+        transformY += -1 * entry.intersectionRatio * scrollScale
         entry.target.style.transform = `translate(0, ${transformY}px)`
       } else { // Scrolling down leave
-        transformY += entry.intersectionRatio * 150
+        transformY += -1 * entry.intersectionRatio * scrollScale
         entry.target.style.transform = `translate(0, ${transformY}px)`
       }
     } else if (currentY > previousY && isIntersecting) {
       if (currentRatio < previousRatio) { // Scrolling up leave
-        transformY += -1 * entry.intersectionRatio * 150
+        transformY += 1 * entry.intersectionRatio * scrollScale
         entry.target.style.transform = `translate(0, ${transformY}px)`
       } else { // Scrolling up enter
-        transformY += entry.intersectionRatio * 150
+        transformY += 1 * entry.intersectionRatio * scrollScale
         entry.target.style.transform = `translate(0, ${transformY}px)`
       }
     }
