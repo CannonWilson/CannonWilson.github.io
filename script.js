@@ -66,7 +66,10 @@ function handleIntersect(entries, observer) {
     const currentY = entry.boundingClientRect.y
     const currentRatio = entry.intersectionRatio
     const isIntersecting = entry.isIntersecting
-    const translateY = entry.target.style.top //YYEEEEETT
+    const style = window.getComputedStyle(entry.target)
+const matrix = style.transform || style.webkitTransform || style.mozTransform
+const matrixValues = matrix.match(/matrix.*\((.+)\)/)[1].split(', ')
+    const transformY = matrixValues[5]
     
      // Scrolling down/up
     if (currentY < previousY) {
