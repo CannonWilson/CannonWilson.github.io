@@ -23,7 +23,7 @@ body {
   text-align: center;
   position: relative;
   transform: translate(-50%, -50%);
-  animation: shadow 3s linear infinite;
+  animation: shadow 2.5s linear infinite;
 }
 .stars {
   position: absolute;
@@ -51,7 +51,7 @@ body {
 
 @keyframes shadow {
   50% {
-      text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 30px white;
+      text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 40px white, 0 0 20px white;
       color: white;
   }
 }
