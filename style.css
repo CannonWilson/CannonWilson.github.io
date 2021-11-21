@@ -25,6 +25,7 @@ body {
   text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
   font-size: 15vw;
   letter-spacing: 1vw;
+  transform: translate(0 -10px);
   position: relative;
   animation: shadow 2.5s linear infinite;
 }
