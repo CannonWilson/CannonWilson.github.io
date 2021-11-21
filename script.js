@@ -22,6 +22,7 @@ const numSteps = 20.0;
 let nameElement;
 let previousRatio = 0.0;
 let previousY = 0;
+let transformY = 0;
 // let increasingColor = "rgba(40, 40, 190, ratio)";
 // let decreasingColor = "rgba(190, 40, 40, ratio)";
 
@@ -66,25 +67,23 @@ function handleIntersect(entries, observer) {
     const currentY = entry.boundingClientRect.y
     const currentRatio = entry.intersectionRatio
     const isIntersecting = entry.isIntersecting
-    const style = window.getComputedStyle(entry.target)
-const matrix = style.transform || style.webkitTransform || style.mozTransform
-const matrixValues = matrix.match(/matrix.*\((.+)\)/)[1].split(', ')
-    const transformY = matrixValues[5]
     
      // Scrolling down/up
     if (currentY < previousY) {
       if (currentRatio > previousRatio && isIntersecting) { // Scrolling down enter
-        entry.target.style.transform = `translate(0, ${(-1 * entry.intersectionRatio) * 150}px)`
-        
+        transformY += -1 * entry.intersectionRatio * 150
+        entry.target.style.transform = `translate(0, ${transformY}px)`
       } else { // Scrolling down leave
-            entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
+        transformY += entry.intersectionRatio * 150
+        entry.target.style.transform = `translate(0, ${transformY}px)`
       }
     } else if (currentY > previousY && isIntersecting) {
       if (currentRatio < previousRatio) { // Scrolling up leave
-            //entry.target.style.transform = `translate(0, ${(-1 * entry.intersectionRatio) * 150}px)`
-        entry.target.style.transform = `translate(0, 0)`
+        transformY += -1 * entry.intersectionRatio * 150
+        entry.target.style.transform = `translate(0, ${transformY}px)`
       } else { // Scrolling up enter
-            entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
+        transformY += entry.intersectionRatio * 150
+        entry.target.style.transform = `translate(0, ${transformY}px)`
       }
     }
 
