@@ -65,12 +65,14 @@ function handleIntersect(entries, observer) {
       //entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);
       //entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
       entry.target.style.opacity = `${entry.intersectionRatio}`;
-      entry.target.style.top = `${entry.intersectionRatio * 100}px`
+      //entry.target.style.top = `${(entry.intersectionRatio - 0.5) * 200}px`
+      entry.target.style.transform = `translate(0, ${(entry.intersectionRatio-1) * 150}px)`
     } else {
       //entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
       //entry.target.style.fontSize = `${Math.floor(entry.intersectionRatio * 14)}vw`;
       entry.target.style.opacity = `${entry.intersectionRatio}`;
-      entry.target.style.top = `${entry.intersectionRatio * 100}px`
+      //entry.target.style.top = `${(entry.intersectionRatio - 0.5) * 200}px`
+      entry.target.style.transform = `translate(0, ${(entry.intersectionRatio-1) * 150}px)`
     }
 
     prevRatio = entry.intersectionRatio;
