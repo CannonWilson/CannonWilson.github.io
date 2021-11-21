@@ -70,13 +70,15 @@ function handleIntersect(entries, observer) {
      // Scrolling down/up
     if (currentY < previousY) {
       if (currentRatio > previousRatio && isIntersecting) { // Scrolling down enter
-            entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+            //entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+        entry.target.style.transform = `translate(0, 0)`
       } else { // Scrolling down leave
             entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
       }
     } else if (currentY > previousY && isIntersecting) {
       if (currentRatio < previousRatio) { // Scrolling up leave
-            entry.target.style.transform = `translate(0, ${(-1 * entry.intersectionRatio) * 150}px)`
+            //entry.target.style.transform = `translate(0, ${(-1 * entry.intersectionRatio) * 150}px)`
+        entry.target.style.transform = `translate(0, 0)`
       } else { // Scrolling up enter
             entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
       }
