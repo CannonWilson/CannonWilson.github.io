@@ -22,7 +22,7 @@ const numSteps = 20.0;
 let nameElement;
 let previousRatio = 0.0;
 let previousY = 0;
-let transformY = 0;
+let transformY = -50;
 let scrollScale = 50;
 // let increasingColor = "rgba(40, 40, 190, ratio)";
 // let decreasingColor = "rgba(190, 40, 40, ratio)";
@@ -51,7 +51,7 @@ function createObserver() {
 
 function buildThresholdList() {
   let thresholds = [];
-  let numSteps = 20;
+  let numSteps = 40;
 
   for (let i=1.0; i<=numSteps; i++) {
     let ratio = i/numSteps;
