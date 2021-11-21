@@ -70,7 +70,7 @@ function handleIntersect(entries, observer) {
      // Scrolling down/up
     if (currentY < previousY) {
       if (currentRatio > previousRatio && isIntersecting) { // Scrolling down enter
-            //entry.target.style.transform = `translate(0, ${(-1*entry.intersectionRatio) * 150}px)`
+            //entry.target.style.transform = `translate(0, ${(-1 * entry.intersectionRatio) * 150}px)`
         entry.target.style.transform = `translate(0, 0)`
       } else { // Scrolling down leave
             entry.target.style.transform = `translate(0, ${(entry.intersectionRatio) * 150}px)`
