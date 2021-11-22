@@ -111,7 +111,7 @@ function scrollHandler () {
 function imagesClicked() {
   let images = document.getElementsByClassName("clickable-image")
   for (const image in images) {
-    document.getElementById("name").innerText = images.classList
+    document.getElementById("name").innerText = images[0].classList
     if (image.classList.contains("top-0")) {
       document.getElementById("name").innerText+="1"
       image.classList.remove("top-0")
