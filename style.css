@@ -7,7 +7,7 @@ body {
 }
 
 
-.vertical-scroll-wrapper {
+#vertical-scroll-wrapper {
  position: fixed;
  left: 0;
  top: 0;
