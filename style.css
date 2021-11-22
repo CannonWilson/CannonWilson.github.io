@@ -31,8 +31,8 @@ body {
   position: relative;
 }
 .top-1 {
-  top: 0;
-    left: 0;
+  top: 20px;
+  left: 20px;
   position: absolute;
 }
 .top-2 {

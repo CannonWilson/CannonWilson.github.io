@@ -104,3 +104,11 @@ function scrollHandler () {
   const [r, g, b] = [red*y, green*y, blue/y].map(Math.round) // was division instead of multiplication
   document.body.style.background = `linear-gradient(to top, rgb(${r}, ${g}, ${b}) -140%, black) center center fixed`
 }
+
+
+var images = document.getElementById('').getElementsByTagName('div');
+// Shuffle between images
+function imagesClicked() {
+  let parent = document.querySelector(".image-wrapper")
+  for (image in )
+}
