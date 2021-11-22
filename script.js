@@ -98,7 +98,6 @@ function handleIntersect(entries, observer) {
 // Change gradient on scroll
 const section1 = document.getElementById("vertical-scroll-wrapper")
 const [red, green, blue] = [225, 111, 225]
-let y=0
 
 function scrollHandler () {
   const y = (document.getElementById("vertical-scroll-wrapper").scrollTop)/1500 // was 150, or 2500 or 3000
