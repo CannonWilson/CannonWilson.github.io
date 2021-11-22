@@ -101,7 +101,7 @@ const [red, green, blue] = [69, 111, 225]
 let y=0
 
 function scrollHandler () {
-  const y = (document.getElementById("vertical-scroll-wrapper").scrollTop)/2000
+  const y = (1000 + document.getElementById("vertical-scroll-wrapper").scrollTop)/2000
   const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
   document.body.style.background = `linear-gradient(to top, rgb(${r}, ${g}, ${b}) -140%, black) center center fixed`
 }
