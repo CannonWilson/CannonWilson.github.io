@@ -109,17 +109,29 @@ function scrollHandler () {
 
 // Shuffle between images
 function imagesClicked() {
-  let images = document.querySelector(".clickable-image")
-  for (let image in images) {
+  document.getElementsByClassName("clickable-image").foreach((image) => {
     if (image.classList.contains("top-0")) {
-          document.getElementById("name").innerText += "tee"
-
+      document.getElementById("name").innerText+="1"
       image.classList.remove("top-0")
       image.classList.add("top-1")
     }
     else if (image.classList.contains("top-1")) {
+      document.getElementById("name").innerText+="2"
       image.classList.remove("top-1")
       image.classList.add("top-0")
     }
-  }
+  })
+  // for (let image in images) {
+  //   document.getElementById("name").innerText=images.length
+  //   if (image.classList.contains("top-0")) {
+  //     document.getElementById("name").innerText+="1"
+  //     image.classList.remove("top-0")
+  //     image.classList.add("top-1")
+  //   }
+  //   else if (image.classList.contains("top-1")) {
+  //     document.getElementById("name").innerText+="2"
+  //     image.classList.remove("top-1")
+  //     image.classList.add("top-0")
+  //   }
+  // }
 }
