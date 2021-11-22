@@ -1,6 +1,6 @@
 html,
 body {
-  background: linear-gradient(to top, #c70e7d -140%, black) center center fixed;
+  background: linear-gradient(to top, #0017a8 -140%, black) center center fixed;
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
@@ -18,19 +18,19 @@ body {
 
 
 #second-section {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border-radius: 20px;
 }
 
 .section-heading {
   font-family: Montserrat;
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 
 .section-text {
   font-family: Montserrat;
-  font-size: 1.8vw;
+  font-size: 1.9vw;
 }
 
 
