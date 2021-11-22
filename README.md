@@ -4,6 +4,6 @@ This is the code for my personal website, which is accessible from CannonWilson.
 
 This site is made using HTML/CSS and JavaScript. I have implemented the following features:
 - CSS Bootstrap for formatting
-- Horizontal scrolling
+- Vertical overflow scrolling
 - Triggering CSS animations using the intersection observer API
 - Pausing and playing gifs on hover
