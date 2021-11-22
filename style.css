@@ -23,14 +23,20 @@ body {
   border-radius: 20px;
 }
 
+#third-section {
+  margin-top: 40px;
+}
+
 .section-heading {
   font-family: Montserrat;
   font-size: 4.5vw;
+  color: white;
 }
 
 .section-text {
   font-family: Montserrat;
   font-size: 1.9vw;
+  color: white;
 }
 
 
