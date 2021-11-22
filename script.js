@@ -92,3 +92,15 @@ function handleIntersect(entries, observer) {
     previousRatio = currentRatio
   });
 }
+
+
+
+// Change gradient on scroll
+const [red, green, blue] = [69, 111, 225]
+const section1 = document.querySelector('.vertical-scroll-wrapper')
+
+window.addEventListener('scroll', () => {
+  const y = 1 + (section1.scrollY) / 150
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  section1.style.background = `linear-gradient(to top, ${r}, ${g}, ${b} -140%, black) center center fixed`
+})
