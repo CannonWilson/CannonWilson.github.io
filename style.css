@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to top, #0017a8 -140%, black) center center fixed;
+  background: linear-gradient(to top, blue -140%, black) center center fixed;
   scroll-behavior: smooth;
   height: auto;
   width: 100%;
@@ -15,6 +15,28 @@ body {
   height: 1px;
 }
 
+.image-wrapper {
+  position: relative;
+  top: 0;
+}
+
+.clickable-image {
+  width: 300px;
+}
+
+.top-0 {
+  top: 0;
+    left: 0;
+  position: relative;
+}
+.top-1 {
+  top: 20px;
+  position: absolute;
+}
+.top-2 {
+  top: 40px;
+  position: absolute;
+}
 
 #vertical-scroll-wrapper {
  position: fixed;
