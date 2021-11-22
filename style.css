@@ -20,6 +20,17 @@ body {
 #second-section {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  border-radius: 20px;
+}
+
+.section-heading {
+  font-family: Montserrat;
+  font-size: 5vw;
+}
+
+.section-text {
+  font-family: Montserrat;
+  font-size: 1.8vw;
 }
 
 
