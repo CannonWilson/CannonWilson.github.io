@@ -97,12 +97,12 @@ function handleIntersect(entries, observer) {
 
 // Change gradient on scroll
 const section1 = document.getElementById("vertical-scroll-wrapper")
-const [red, green, blue] = [69, 111, 225]
+//const [red, green, blue] = [69, 111, 225]
+let y=0
 
 function scrollHandler () {
-  const section1 = document.getElementById("vertical-scroll-wrapper")
-  const y = 1 + (section1.getBoundingClientRect().top + window.scrollY) / 150
+  y = document.getElementById("").scrollTop
   document.getElementById("name").innerText = `${y}`
-  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  //const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
   //document.body.style.background = `linear-gradient(to top, rgb(${r}, ${g}, ${b}) -140%, black) center center fixed`
 }
