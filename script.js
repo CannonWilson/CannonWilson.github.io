@@ -110,17 +110,19 @@ function scrollHandler () {
 // Shuffle between images
 function imagesClicked() {
   let images = document.getElementsByClassName("clickable-image")
-  for (const image in images) {
-    document.getElementById("name").innerText = images[0].classList
-    if (image.classList.contains("top-0")) {
-      document.getElementById("name").innerText+="1"
-      image.classList.remove("top-0")
-      image.classList.add("top-1")
+  for (let i = 0; i < images.length; i++) {
+      if (images[i].classList.contains("top-0")) {
+      images[i].classList.remove("top-0")
+      images[i].classList.add("top-2")
     }
-    else if (image.classList.contains("top-1")) {
-      document.getElementById("name").innerText+="2"
-      image.classList.remove("top-1")
-      image.classList.add("top-0")
+    else if (images[i].classList.contains("top-1")) {
+      images[i].classList.remove("top-1")
+      images[i].classList.add("top-0")
     }
-  }
+    else if (images[i].classList.contains("top-2")) {
+      images[i].classList.remove("top-2")
+      images[i].classList.add("top-1")
+    }
+    }
+  
 }
