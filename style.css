@@ -2,7 +2,7 @@ html,
 body {
   background: linear-gradient(to top, #0017a8 -140%, black) center center fixed;
   scroll-behavior: smooth;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
