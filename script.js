@@ -109,7 +109,9 @@ function scrollHandler () {
 
 // Shuffle between images
 function imagesClicked() {
-  document.getElementsByClassName("clickable-image").foreach((image) => {
+  let images = document.getElementsByClassName("clickable-image")
+  for (const image in images) {
+    document.getElementById("name").innerText = images.classList
     if (image.classList.contains("top-0")) {
       document.getElementById("name").innerText+="1"
       image.classList.remove("top-0")
@@ -120,18 +122,5 @@ function imagesClicked() {
       image.classList.remove("top-1")
       image.classList.add("top-0")
     }
-  })
-  // for (let image in images) {
-  //   document.getElementById("name").innerText=images.length
-  //   if (image.classList.contains("top-0")) {
-  //     document.getElementById("name").innerText+="1"
-  //     image.classList.remove("top-0")
-  //     image.classList.add("top-1")
-  //   }
-  //   else if (image.classList.contains("top-1")) {
-  //     document.getElementById("name").innerText+="2"
-  //     image.classList.remove("top-1")
-  //     image.classList.add("top-0")
-  //   }
-  // }
+  }
 }
