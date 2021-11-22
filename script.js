@@ -109,16 +109,17 @@ function scrollHandler () {
 
 // Shuffle between images
 function imagesClicked() {
-  let images = document.querySelector(".image-wrapper").getElementsByTagName('img')
+  let images = document.querySelector(".clickable-image")
   for (let image in images) {
-    document.getElementById("name").innerText += "tee"
     if (image.classList.contains("top-0")) {
-      image.classList.toggle("top-0");
-      image.classList.toggle("top-1")
+          document.getElementById("name").innerText += "tee"
+
+      image.classList.remove("top-0")
+      image.classList.add("top-1")
     }
     else if (image.classList.contains("top-1")) {
-      image.classList.toggle("top-1")
-      image.classList.toggle("top-0")
+      image.classList.remove("top-1")
+      image.classList.add("top-0")
     }
   }
 }
