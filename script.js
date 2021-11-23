@@ -111,26 +111,25 @@ function scrollHandler () {
 function imagesClicked(imagesParent) {
   let images = imagesParent.getElementsByClassName("clickable-image")
   for (let i = 0; i < images.length; i++) {
-      images[i].classList.remove(`top-${i}`)
-    if (i === 0) {
+    for (let j = 0; j < images.length; j++) {
+
+    if (images[i].classList.contains("top-0")) {
+      images[i].classList.remove("top-0")
       images[i].classList.add(`top-${images.length - 1}`)
-    } else {
-      images[i].classList.add(`top-${i - 1}`)
     }
-    
-    
-//     if (images[i].classList.contains("top-0")) {
-//       images[i].classList.remove("top-0")
-//       images[i].classList.add("top-2")
-//     }
-//     else if (images[i].classList.contains("top-1")) {
-//       images[i].classList.remove("top-1")
-//       images[i].classList.add("top-0")
-//     }
-//     else if (images[i].classList.contains("top-2")) {
-//       images[i].classList.remove("top-2")
-//       images[i].classList.add("top-1")
-//     }
+    else if (images[i].classList.contains(`top-${j}`)) {
+      images[i].classList.remove(`top-${j}`)
+      images[i].classList.add(`top-${j-1}`)
     }
+    // else if (images[i].classList.contains("top-1")) {
+    //   images[i].classList.remove("top-1")
+    //   images[i].classList.add("top-0")
+    // }
+    // else if (images[i].classList.contains("top-2")) {
+    //   images[i].classList.remove("top-2")
+    //   images[i].classList.add("top-1")
+    // }
+    }
+  }
   
 }
