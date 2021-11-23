@@ -19,6 +19,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  margin: auto;
 }
 
 #image-caption {
@@ -28,30 +29,38 @@ body {
 }
 
 .clickable-image {
-  width: 300px;
+  width: 30vw;
+  height: 20vw;
+  margin: auto;
+}
+
+.portfolio-row {
+  margin: 10vh 0;
 }
 
 .top-0 {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 .top-1 {
-  top: -7px;
-  left: 7px;
+  top: -10px;
+  left: 10px;
+  position: absolute;
+  z-index: 2;
+}
+.top-2 {
+  top: -20px;
+  left: 20px;
   position: absolute;
   z-index: 1;
 }
-.top-2 {
-  top: -14px;
-  left: 14px;
-  position: absolute;
-}
 .top-3 {
-  top: -21px;
-  left: 21px;
+  top: -30px;
+  left: 30px;
   position: absolute;
+  z-index: 0;
 }
 
 #vertical-scroll-wrapper {
@@ -76,7 +85,7 @@ body {
 
 .section-heading {
   font-family: Montserrat;
-  font-size: 4.5vw;
+  font-size: 4vw;
   color: white;
 }
 
