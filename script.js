@@ -129,7 +129,7 @@ function imagesClicked(imagesParent) {
     //   images[i].classList.remove("top-2")
     //   images[i].classList.add("top-1")
     // }
-    }
+    } 
   }
   
 }
