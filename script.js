@@ -18,7 +18,6 @@ function loadStars(star, starsToLoad) {
 //Scroll first block tried
 const numSteps = 20.0;
 
-// let boxElement;
 // let nameElement;
 let previousRatio = 0.0;
 let previousY = 0;
