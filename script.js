@@ -24,12 +24,9 @@ let previousRatio = 0.0;
 let previousY = 0;
 let transformY = -50;
 let scrollScale = 50;
-// let increasingColor = "rgba(40, 40, 190, ratio)";
-// let decreasingColor = "rgba(190, 40, 40, ratio)";
 
 // Set things up
 window.addEventListener("load", (event) => {
-  // boxElement = document.querySelector("#box");
   // nameElement = document.querySelector("#name");
 
   createObserver();
