@@ -109,6 +109,7 @@ function scrollHandler () {
 
 // Shuffle between images
 function imagesClicked() {
+  document.getElementById("image-caption").hidden = "true"
   let images = document.getElementsByClassName("clickable-image")
   for (let i = 0; i < images.length; i++) {
       if (images[i].classList.contains("top-0")) {
