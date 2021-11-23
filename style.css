@@ -21,6 +21,11 @@ body {
   left: 0;
 }
 
+.image-caption {
+  top: 300px;
+  left: 0px;
+}
+
 .clickable-image {
   width: 300px;
 }
