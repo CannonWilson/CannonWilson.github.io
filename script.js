@@ -111,6 +111,16 @@ function scrollHandler () {
 function imagesClicked(imagesParent) {
   let images = imagesParent.getElementsByClassName("clickable-image")
   for (let i = 0; i < images.length; i++) {
+    
+    if (images[i].classList.contains("top-0")) {
+      images[i].classList.remove("top-0")
+      images[i].classList.add(`top-${images.length - 1}`)
+    }
+    else if () {
+      
+    }
+    
+    
     for (let j = 0; j < images.length; j++) {
 
     if (images[j].classList.contains("top-0")) {
