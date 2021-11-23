@@ -152,6 +152,7 @@ body {
   background-repeat: no-repeat;
 	background-position: center center;
   animation-play-state: paused;
+  justify-self: center;
 }
 
 .test:hover {
