@@ -143,31 +143,29 @@ body {
 
 /* Testing to play a gif on hover */
 /* Currently plays a dancing banana */
-.test {
+.gif {
   width: 300px;
   height: 300px;
   position: relative;
-  animation: test 0.5s infinite steps(1);
-  background-image: url(http://i.imgur.com/E2ee6fI.gif);
+  animation: gif 0.5s infinite steps(1);
+  content: url(http://i.imgur.com/E2ee6fI.gif);
   background-repeat: no-repeat;
-	background-position: center center;
+  background-position: center center;
   animation-play-state: paused;
-  justify-self: center;
 }
-
-.test:hover {
+.gif:hover {
   animation-play-state: running;
 }
 
-@keyframes test {
-  0%   { background-image: url('http://i.imgur.com/E2ee6fI.gif'); }
-	15%  { background-image: url('http://i.imgur.com/JIi0uul.gif'); }
-	30%  { background-image: url('http://i.imgur.com/owNGnNN.gif'); }
-	45%  { background-image: url('http://i.imgur.com/2Ii6XOz.gif'); }
-	60%  { background-image: url('http://i.imgur.com/ZmQBrQ5.gif'); }
-	75%  { background-image: url('http://i.imgur.com/iAsfHyY.gif'); }
-	90%  { background-image: url('http://i.imgur.com/AJwRblj.gif'); }
-	100% { background-image: url('http://i.imgur.com/fx5wUNY.gif'); }
+@keyframes gif {
+  0%   { content: url('http://i.imgur.com/E2ee6fI.gif'); }
+  15%  { content: url('http://i.imgur.com/JIi0uul.gif'); }
+  30%  { content: url('http://i.imgur.com/owNGnNN.gif'); }
+  45%  { content: url('http://i.imgur.com/2Ii6XOz.gif'); }
+  60%  { content: url('http://i.imgur.com/ZmQBrQ5.gif'); }
+  75%  { content: url('http://i.imgur.com/iAsfHyY.gif'); }
+  90%  { content: url('http://i.imgur.com/AJwRblj.gif'); }
+  100% { content: url('http://i.imgur.com/fx5wUNY.gif'); }
 }
 
 
