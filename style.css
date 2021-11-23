@@ -38,14 +38,19 @@ body {
   z-index: 2;
 }
 .top-1 {
-  top: -10px;
-  left: 10px;
+  top: -7px;
+  left: 7px;
   position: absolute;
   z-index: 1;
 }
 .top-2 {
-  top: -20px;
-  left: 20px;
+  top: -14px;
+  left: 14px;
+  position: absolute;
+}
+.top-3 {
+  top: -21px;
+  left: 21px;
   position: absolute;
 }
 

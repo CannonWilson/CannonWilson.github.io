@@ -116,30 +116,17 @@ function imagesClicked(imagesParent) {
       images[i].classList.remove("top-0")
       images[i].classList.add(`top-${images.length - 1}`)
     }
-    else if () {
-      
+    else if (images[i].classList.contains("top-1")) {
+      images[i].classList.remove("top-1")
+      images[i].classList.add("top-0")
     }
-    
-    
-    for (let j = 0; j < images.length; j++) {
-
-    if (images[j].classList.contains("top-0")) {
-      images[j].classList.remove("top-0")
-      images[j].classList.add(`top-${images.length - 1}`)
+    else if (images[i].classList.contains("top-2")) {
+      images[i].classList.remove("top-2")
+      images[i].classList.add("top-1")
     }
-    else if (images[j].classList.contains(`top-${i}`)) {
-        images[j].classList.remove(`top-${i}`)
-        images[j].classList.add(`top-${i-1}`)
-      }
-      // else if (images[i].classList.contains("top-1")) {
-      //   images[i].classList.remove("top-1")
-    //   images[i].classList.add("top-0")
-    // }
-    // else if (images[i].classList.contains("top-2")) {
-    //   images[i].classList.remove("top-2")
-    //   images[i].classList.add("top-1")
-    // }
-    } 
-  }
-  
+    else if (images[i].classList.contains("top-3")) {
+      images[i].classList.remove("top-3")
+      images[i].classList.add("top-2")
+    }
+  } 
 }
