@@ -29,8 +29,8 @@ body {
 }
 
 .clickable-image {
-  width: 30vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   margin: auto;
 }
 
@@ -42,25 +42,37 @@ body {
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 3;
+  z-index: 6;
 }
 .top-1 {
   top: -10px;
   left: 10px;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
 }
 .top-2 {
   top: -20px;
   left: 20px;
   position: absolute;
-  z-index: 1;
+  z-index: 4;
 }
 .top-3 {
   top: -30px;
   left: 30px;
   position: absolute;
-  z-index: 0;
+  z-index: 3;
+}
+.top-4 {
+  top: -40px;
+  left: 40px;
+  position: absolute;
+  z-index: 2;
+}
+.top-5 {
+  top: -50px;
+  left: 50px;
+  position: absolute;
+  z-index: 1;
 }
 
 #vertical-scroll-wrapper {

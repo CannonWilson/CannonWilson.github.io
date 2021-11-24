@@ -124,5 +124,13 @@ function imagesClicked(imagesParent) {
       images[i].classList.remove("top-3")
       images[i].classList.add("top-2")
     }
+    else if (images[i].classList.contains("top-4")) {
+      images[i].classList.remove("top-4")
+      images[i].classList.add("top-3")
+    }
+    else if (images[i].classList.contains("top-5")) {
+      images[i].classList.remove("top-5")
+      images[i].classList.add("top-4")
+    }
   } 
 }
