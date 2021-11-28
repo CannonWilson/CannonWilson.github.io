@@ -45,32 +45,32 @@ body {
   z-index: 6;
 }
 .top-1 {
-  top: -10px;
-  left: 10px;
+  top: -0.8vw;
+  left: 0.8vw;
   position: absolute;
   z-index: 5;
 }
 .top-2 {
-  top: -20px;
-  left: 20px;
+  top: -1.6vw;
+  left: 1.6vw;
   position: absolute;
   z-index: 4;
 }
 .top-3 {
-  top: -30px;
-  left: 30px;
+  top: -2.4vw;
+  left: 2.4vw;
   position: absolute;
   z-index: 3;
 }
 .top-4 {
-  top: -40px;
-  left: 40px;
+  top: -3.2vw;
+  left: 3.2vw;
   position: absolute;
   z-index: 2;
 }
 .top-5 {
-  top: -50px;
-  left: 50px;
+  top: -4vw;
+  left: 4vw;
   position: absolute;
   z-index: 1;
 }
