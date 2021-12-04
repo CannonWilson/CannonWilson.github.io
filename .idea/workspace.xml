@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837fe7b6-0fa6-4fd1-962d-fd980d9c376b" name="Changes" comment="Editing images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,8 @@
       <option name="presentableId" value="Default" />
       <updated>1637696023086</updated>
       <workItem from="1637696025645" duration="10841000" />
-      <workItem from="1638058076361" duration="1905000" />
+      <workItem from="1638058076361" duration="4034000" />
+      <workItem from="1638660556381" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Centering gif">
       <created>1637697900404</created>

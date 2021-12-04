@@ -23,9 +23,12 @@ body {
 }
 
 #image-caption {
-  top: 200px;
+  top: 25vw; /* This value is based on the height of the images */
   left: 0px;
   position: relative;
+  color: white;
+  font-size: calc(6px + .8vw);
+
 }
 
 .clickable-image {
@@ -97,13 +100,14 @@ body {
 
 .section-heading {
   font-family: Montserrat;
-  font-size: 4vw;
+  font-size: calc(25px + 2vw);
   color: white;
 }
 
 .section-text {
   font-family: Montserrat;
   font-size: 1.9vw;
+  font-size: calc(14px + 1vw);
   color: white;
 }
 
