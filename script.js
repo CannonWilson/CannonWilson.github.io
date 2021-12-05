@@ -115,6 +115,7 @@ function imagesClicked(imagesParent) {
     else if (images[i].classList.contains("top-1")) {
       images[i].classList.remove("top-1")
       images[i].classList.add("top-0")
+      imagesParent.getElementsByClassName("image-caption")[0].innerText = images[i].alt
     }
     else if (images[i].classList.contains("top-2")) {
       images[i].classList.remove("top-2")
@@ -132,7 +133,5 @@ function imagesClicked(imagesParent) {
       images[i].classList.remove("top-5")
       images[i].classList.add("top-4")
     }
-
-    document.getElementById("image-caption").innerText = document.getElementsByClassName("top-0")[0].alt;
   } 
 }

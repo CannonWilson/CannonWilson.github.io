@@ -22,7 +22,7 @@ body {
   margin: auto;
 }
 
-#image-caption {
+.image-caption {
   top: 25vw; /* This value is based on the height of the images */
   left: 0px;
   position: relative;
