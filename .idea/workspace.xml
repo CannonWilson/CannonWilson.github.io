@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837fe7b6-0fa6-4fd1-962d-fd980d9c376b" name="Changes" comment="Editing images">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +15,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="21Ki8nyvAhuRnaMgj89CpLdONOf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,7 +56,12 @@
       <workItem from="1638660556381" duration="669000" />
       <workItem from="1638661273429" duration="192000" />
       <workItem from="1638661475629" duration="34000" />
-      <workItem from="1638661520801" duration="3760000" />
+      <workItem from="1638661520801" duration="4576000" />
+      <workItem from="1638673433135" duration="166000" />
+      <workItem from="1638729145881" duration="125000" />
+      <workItem from="1639086989919" duration="5758000" />
+      <workItem from="1639146578500" duration="8000" />
+      <workItem from="1639147547790" duration="2594000" />
     </task>
     <task id="LOCAL-00001" summary="Centering gif">
       <created>1637697900404</created>

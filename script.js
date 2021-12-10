@@ -115,7 +115,7 @@ function imagesClicked(imagesParent) {
     else if (images[i].classList.contains("top-1")) {
       images[i].classList.remove("top-1")
       images[i].classList.add("top-0")
-      imagesParent.getElementsByClassName("image-caption")[0].innerText = images[i].alt
+      imagesParent.getElementsByClassName("image-caption")[0].innerHTML = images[i].alt
     }
     else if (images[i].classList.contains("top-2")) {
       images[i].classList.remove("top-2")
