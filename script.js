@@ -1,3 +1,19 @@
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // generate a five digit number for the contact_number variable
+    this.contact_number.value = Math.random() * 100000 | 0;
+    // these IDs from the previous steps
+    emailjs.sendForm('contact_service', 'contact_form', this)
+        .then(function() {
+          window.alert("Thank you very much, your message was sent successfully. I will respond as soon as I can.")
+        }, function(error) {
+          window.alert("I am very sorry for the inconvenience, your message was not sent successfully. Please email CannonGWilson@gmail.com.")
+        });
+  });
+}
+
+
 function loadStars(star, starsToLoad) {
   let boxShadow = "";
   let x;

@@ -99,14 +99,15 @@ body {
 }
 
 .section-heading {
-  font-family: Montserrat;
+  font-weight: 600;
+  font-family: Montserrat, serif;
   font-size: calc(25px + 2vw);
   color: white;
 }
 
 .section-text {
-  font-family: Montserrat;
-  font-size: 1.9vw;
+  font-weight: 400;
+  font-family: Montserrat, serif;
   font-size: calc(14px + 1vw);
   color: white;
 }
@@ -115,7 +116,7 @@ body {
 /* Styling for the big CANNON */
 #name {
   font-weight: 400;
-  font-family: 'Bungee Outline', cursive;
+  font-family: 'Bungee Outline', sans-serif;
   text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
   font-size: 15vw;
   letter-spacing: 1vw;
