@@ -15,25 +15,32 @@
     </script>
 
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
+        window.onload = function () {
 
-                if (checkInput()) {
-                    // generate a five digit number for the contact_number variable
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    // these IDs from the previous steps
-                    emailjs.sendForm('service_9hh5t7k', 'contact_form', this)
-                        .then(function() {
-                            window.alert('SUCCESS!');
-                        }, function(error) {
-                            window.alert('FAILED...', error);
-                        });
-                }
-                else {
-                    window.alert("There are one or more errors in your submission fields")
-                }
-            });
+            const mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+            if (mobile) {
+                alert("Visit this on a Computer for Better View");
+            } else {
+                // Setup for form
+
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    if (checkInput()) {
+                        // generate a five digit number for the contact_number variable
+                        this.contact_number.value = Math.random() * 100000 | 0;
+                        // these IDs from the previous steps
+                        emailjs.sendForm('service_9hh5t7k', "template_jyplnin", this)
+                            .then(function () {
+                                window.alert('SUCCESS!');
+                            }, function (error) {
+                                window.alert('FAILED...', error);
+                            });
+                    } else {
+                        window.alert("There are one or more errors in your submission fields")
+                    }
+                });
+            }
         }
     </script>
 
@@ -277,32 +284,34 @@
                 <p class="section-text">I'm always open to questions, concerns, or collaborations.</p>
             </div>
         </div>
-<form id="contact-form">
-    <input type="hidden" name="contact_number">
-        <div class="row">
-            <div class="col text-end p-0">
-                <input id="name-input" class="input input-50" type="text" name="user_name" placeholder="Your name:">
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <div class="row g-0">
+                <div class="col text-end">
+                    <input id="name-input" class="input input-50" type="text" name="user_name" placeholder="Your name:">
+                </div>
+
+                <div class="col text-start">
+                    <input id="email-input" class="input input-50" type="email" name="user_email"
+                           placeholder="Your email:">
+                </div>
             </div>
 
-            <div class="col text-start p-0">
-                <input id="email-input" class="input input-50" type="email" name="user_email" placeholder="Your email:">
+            <div class="row mt-1">
+                <div class="col text-center">
+                    <textarea id="message-input" class="input input-100" placeholder="Your message:"
+                              name="message"></textarea>
+                </div>
             </div>
-        </div>
-
-    <div class="row">
-        <div class="col text-center">
-            <textarea id="message-input" class="input input-100" placeholder="Your message:" name="message"></textarea>
-        </div>
-    </div>
 
 
-        <div class="row mt-2">
-            <div class="col text-center mb-5">
-            <input class="send-button" type="submit" value="Send">
+            <div class="row mt-2">
+                <div class="col text-center mb-5">
+                    <input class="send-button" type="submit" value="Send">
+                </div>
             </div>
-        </div>
 
-</form>
+        </form>
 
     </div>
 

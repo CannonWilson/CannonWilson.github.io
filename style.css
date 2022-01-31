@@ -184,14 +184,15 @@ body {
 }
 
 @keyframes gif {
-  0%   { content: url('http://i.imgur.com/E2ee6fI.gif'); }
-  15%  { content: url('http://i.imgur.com/JIi0uul.gif'); }
-  30%  { content: url('http://i.imgur.com/owNGnNN.gif'); }
-  45%  { content: url('http://i.imgur.com/2Ii6XOz.gif'); }
-  60%  { content: url('http://i.imgur.com/ZmQBrQ5.gif'); }
-  75%  { content: url('http://i.imgur.com/iAsfHyY.gif'); }
-  90%  { content: url('http://i.imgur.com/AJwRblj.gif'); }
-  100% { content: url('http://i.imgur.com/fx5wUNY.gif'); }
+  0%   { content: url('./images/waving/Frame1.jpg'); }
+  12%  { content: url('./images/waving/Frame2.jpg'); }
+  25%  { content: url('./images/waving/Frame3.jpg'); }
+  38%  { content: url('./images/waving/Frame4.jpg'); }
+  50%  { content: url('./images/waving/Frame5.jpg'); }
+  62%  { content: url('./images/waving/Frame4.jpg'); }
+  75%  { content: url('./images/waving/Frame3.jpg'); }
+  88%  { content: url('./images/waving/Frame2.jpg'); }
+  100%  { content: url('./images/waving/Frame1.jpg'); }
 }
 
 
@@ -237,6 +238,7 @@ body {
 .form-background {
   background: rgba(20,20,20, 0.8);
   border-radius: 50px;
+  margin-top: 100px;
 }
 
 .field-text {
